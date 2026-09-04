@@ -1,0 +1,458 @@
+/*Barra navegacion*/
+.navbar{
+    background-color:#f3eee7;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.05); /* sombra sutil */
+}
+.navbar-nav {
+    flex-wrap: wrap;
+    gap: 0.5em;
+}
+.nav-link{
+    color: #333;
+}
+.navbar .nav-link{
+    font-size: 0.95em;
+}
+.nav-link:hover{
+    color: #d87127;
+}
+
+/*Inicio fuente*/
+.body{
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+/*index*/
+.seccionTitulo {
+    text-align: center;
+    background-color: #efe2d4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    width: 100%;
+    max-width: 100vw;
+    color: #595d48;
+    /* CAMBIOS AQUÍ: quitamos max-height y añadimos espacio arriba y abajo */
+    padding: 2rem 1rem 2rem 1rem; 
+    /* min-height: 100vh; */
+
+}
+.itemTitulo {
+    width: 100%;
+    max-width: 650px; 
+    margin: 1rem auto 0 auto; 
+    justify-content: center;
+}
+.titulo {
+    font-size: 5vw;
+    color: #595d48;
+}
+.mediaTitulo {
+    height: auto;
+    max-height: 50vh;
+    width: 100%;
+    border-radius: 30px;
+    object-fit: contain;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    margin-bottom: 0.5rem;
+}
+.subtitulo {
+    font-size: 2vw;
+    color: #595d48;
+}
+/* .explore-button {
+    font-size: 1.5em;
+    background-color: #d87127;
+    color: #ffffff;
+    border: none;
+    padding: 0.8em 1.5em;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 1em;   
+}
+.explore-button:hover {
+    background-color: #b85e20; */
+
+.sobreMi{
+    text-align: left;
+    padding: 2em;
+    color: #595d48;
+    background-color: #f7f4ee;
+}
+.Inspiracion{
+    text-align: left;
+    padding: 2em;
+    color: #595d48;
+    background-color: #efe2d4;
+}
+.subtitulo2y3 {
+    font-size: 2.5em;
+    color: #595d48;
+    width: 100%;
+    max-width: calc(300px * 3 + 2em * 2); /* 3 columnas de 300px + gaps */
+    margin: 0 auto 1em; /* lo centra */
+}
+.contenido3columnas {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    flex-wrap: wrap; /* por si la pantalla es pequeña */
+}
+.item3columnas{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.media3Columnas {
+    width: 100%;
+    aspect-ratio: 1 / 1; /* cuadrado */
+    border-radius: 20%; /* igual que Canva */
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.tituloSobreMi {
+    margin-top: 1em;
+    font-size: 1.3em;
+}
+.itemSobreMi p {
+    font-size: 1em;
+    color: #595d48;
+}
+
+/*FOOTER*/
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    flex-wrap: wrap;
+    background-color: #d8cfc4;
+    border-top: 1px solid #b8a99a;
+    width: 100%;
+    color: black;
+    padding: 1em;
+
+}
+----------------------------------------------------------------
+/*BORDADOS*/
+.paginaentera {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-color: #efe2d4;
+    position: relative;
+    height: calc(100vh - 56px);
+}
+.contenido {
+  position: absolute;
+  top: 8vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  z-index: 10;
+  pointer-events: none;
+}
+.titulo1 {
+  font-size: clamp(3rem, 8vw, 5rem);
+  color: #595d48;
+  font-family: 'Pacifico', cursive;
+  text-shadow: 0 2px 16px rgba(0,0,0,0.15);
+  margin-bottom: 0.2em;
+}
+
+/*Carousel*/
+.carousel-caption {
+  background: rgba(30,30,30,0.52);
+  border-radius: 1em;
+  padding: 0.7em 1.2em 0.5em 1.2em;
+  display: inline-block;
+  margin-bottom: 2vh;
+  max-width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.13);
+  backdrop-filter: blur(2px);
+}
+.carousel-caption h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.2em;
+  font-family: 'Pacifico', cursive;
+  letter-spacing: 0.5px;
+}
+.carousel-caption p {
+  font-size: 1rem;
+  margin-bottom: 0;
+    font-family: 'Montserrat', sans-serif;;
+}
+.carousel-inner img {
+    display: flex;
+    max-height: 95vh;
+    width: 100%;
+    max-width: 100vw;
+    object-fit: cover;
+    /* filter: blur(8px); */
+    background: #222;
+    justify-content: center;
+    overflow: hidden;
+}
+#carouselId,
+#carouselId .carousel-inner,
+#carouselId .carousel-item {
+    max-height: 100vh;
+    width: 100%;
+    max-width: 100vw;
+    overflow: hidden;
+    position: relative;
+}
+#carouselId .carousel-item img,
+#carouselId .carousel-item video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+
+}
+.carousel-indicators {
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* Espaciado entre puntos */
+}
+.carousel-indicators [data-bs-target] {
+  width: 12px !important;
+  height: 12px !important;
+  border-radius: 50% !important;
+  border: none !important;
+  margin: 0 !important;
+  background-color: rgba(255,255,255,0.5) !important;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.08);
+  opacity: 1 !important;
+  transition: background-color 0.2s, box-shadow 0.2s;
+  padding: 0 !important;         /* Muy importante para que no se alargue */
+  outline: none !important;
+}
+.carousel-indicators .active,
+.carousel-indicators [aria-current="true"] {
+  background-color: #fff !important;
+  box-shadow: 0 2px 8px rgba(60,60,60,0.15) !important;
+}
+----------------------------------------------------------------
+/*Llaveros*/
+/* Página de llaveros */
+.pagina-llaveros {
+  max-height: 100%;
+  margin: 0 auto;
+  background-color: #efe2d4;
+  font-family: 'Nunito', sans-serif;
+}
+
+.introduccion {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 1em;
+  color:#1b1b15;
+
+}
+
+.galeria-llaveros {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 2rem;
+  justify-items: stretch;
+  margin: 0 auto;
+  padding: 2rem 3rem;
+  overflow: visible;
+  align-items: stretch;
+}
+.llavero:hover {
+  transform-origin: center top;
+   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+   transform: scale(1.05);
+   z-index: 10;
+   transition: transform 0.3s ease, z-index 0.3s ease;
+}
+article.llavero > img{
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  overflow: hidden;
+}
+.llavero > div:last-child{
+  margin-top: auto;
+}
+.llavero {
+  max-width: 380px;
+  position: relative;
+  width: 100%;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  align-items: center;
+  margin: 0.5em;
+  border-radius: 12px;
+  background: linear-gradient(rgba(5,7,12,0.02), rgba(5,7,12,0.02));
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  will-change: transform;
+  isolation: isolate;
+}
+
+.llavero img,
+.llavero video {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+  
+.descripcion {
+  font-size: 1.2rem;
+  text-align: justify;
+  align-items: center;
+  padding: 0 1em 1em 1em;
+  font-family: 'Nunito', sans-serif;
+  color: #595d48;
+  border-radius: 12px;
+}
+
+.referencia {
+  border-top: 1px solid #e2d6c9;
+  color: #7a4f2c;
+  text-decoration: underline;
+  padding: .5em 1em 1em;  
+  font-size: 1.2rem;
+}
+
+---------------------------------------------------------------
+
+/*Pagina del Pan*/
+.pagina-pan {
+  background-color: #efe2d4;
+  color: #4a3b2a;
+}
+/* Encabezado */
+.pagina-pan h1 {
+  text-align: center;
+  font-family: 'Nunito', serif; /* un toque elegante */
+  font-size: 2.2rem;
+  color: #7a4f2c;
+  margin-bottom: 0.5rem;
+}
+.pagina-pan .intro p {
+  text-align: center;
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto 2rem;
+}
+/* Cierre */ .cierre { text-align: center; font-style: italic; font-size: 1.05rem; color: #5a4d42; }
+/* Galería de fotos */
+.galeria-pan {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  object-fit: cover;
+  justify-content: center;
+  align-items: stretch;
+  
+}
+.galeria-pan img {
+  aspect-ratio: 4 / 3;
+  width: calc(33% - 1rem);
+  max-width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  align-items: stretch;
+}
+
+/* Bloques (ingredientes, proceso, tips) */
+.pagina-pan section {
+  background: #fff;
+  margin: 1em;
+  overflow: hidden;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  scroll-margin-top: 80px; /* para anclar bien con el navbar */
+}
+.ingredientes, video{
+  flex:1;
+  padding: inherit;
+  height: -webkit-fill-available;
+  margin: 0 !important;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  background:rgba(0, 0, 0, 0.125);
+}
+.video{
+  width: 243.75px; /* 325px * 0.5 */
+  height: 525px;  /* 700px * 0.5 */
+  position: relative;
+  border-radius: 12px;
+}
+.video iframe{
+  width: 325px;
+  height: 700px;
+  transform: scale(0.8);
+  transform-origin: 0 0;
+  position: absolute;
+  border-radius: 12px;
+}
+.pagina-pan h2 {
+  margin: 1em;
+  color: #7a4f2c;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* Listas */
+.ingredientes ul, .proceso ol,
+.tips ul {
+  padding: 2em;
+}
+.ingredientes li, .tips li, .proceso li {
+  margin-bottom: 0.6rem;
+  position: relative;
+  text-align: justify;
+}
+.ingredientes li::before {
+  color: #7a4f2c;
+  position: relative;
+  left: 0;
+}
+
+
+.proceso ol {
+  padding-left: 1.4rem;
+}
+
+.contenido.pagina-pan{ width: 100vw;}
+
+.contenedor-video-ingredientes{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: start;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  /* Opcional: ajustar el tamaño de los videos en pantallas más pequeñas */
+  @media (max-width: 900px) {
+    .video {
+      max-width: 480px;
+    }
+  }
+}
+
