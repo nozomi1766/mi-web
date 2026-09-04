@@ -54,7 +54,6 @@
 .mediaTitulo {
     height: auto;
     max-height: 50vh;
-    width: 100%;
     border-radius: 30px;
     object-fit: contain;
     margin-bottom: 0.5rem;
