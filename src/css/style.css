@@ -52,11 +52,14 @@
     color: #595d48;
 }
 .mediaTitulo {
-    height: auto;
+    width: 100%;             /* Se adapta al ancho del contenedor */
+    max-width: 100%;         /* Evita que desborde la pantalla */
+    height: auto;            /* Mantiene la proporción original */
     max-height: 50vh;
-    border-radius: 30px;
     object-fit: contain;
+    border-radius: 30px;
     margin-bottom: 0.5rem;
+    display: block;          /* Evita espacios extra en línea */
 }
 .subtitulo {
     font-size: 2vw;
