@@ -54,6 +54,7 @@
 .mediaTitulo {
     height: auto;
     max-height: 50vh;
+    width: 100%;
     border-radius: 30px;
     object-fit: contain;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
@@ -63,19 +64,6 @@
     font-size: 2vw;
     color: #595d48;
 }
-/* .explore-button {
-    font-size: 1.5em;
-    background-color: #d87127;
-    color: #ffffff;
-    border: none;
-    padding: 0.8em 1.5em;
-    border-radius: 5px;
-    cursor: pointer;
-    margin: 1em;   
-}
-.explore-button:hover {
-    background-color: #b85e20; */
-
 .sobreMi{
     text-align: left;
     padding: 2em;
