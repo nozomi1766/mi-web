@@ -25,6 +25,10 @@
     min-height: 100vh;
     margin: 0;
 }
+body, html {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 /*index*/
 .seccionTitulo {
     text-align: center;
@@ -52,14 +56,14 @@
     color: #595d48;
 }
 .mediaTitulo {
-    width: 100%;             /* Se adapta al ancho del contenedor */
-    max-width: 100%;         /* Evita que desborde la pantalla */
-    height: auto;            /* Mantiene la proporción original */
+    width: 100%;
+    max-width: 100%;
+    height: auto;
     max-height: 50vh;
     object-fit: contain;
     border-radius: 30px;
     margin-bottom: 0.5rem;
-    display: block;          /* Evita espacios extra en línea */
+    display: block;
 }
 .subtitulo {
     font-size: 2vw;
